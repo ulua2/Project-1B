@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Relol</title>
-
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-   
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-    <!-- Firebase References -->
-    <!--<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>-->
-    <!--<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>-->
-    
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!-- Script -->
-    <script src="arnold.js"></script>
-    <script src="ariel.js"></script>
-    <script src="art.js"></script>
+ <meta charset="UTF-8">
+ <title>Relol</title>
+ <!-- Bootstrap CSS CDN  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+ <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+ <!-- Style to fix the issue of text extending past card length -->
+ <style>
+   .card-body a {
+     word-break: break-all;
+   }
+   .articleHeadline {
+     line-height: 1.5;
+   }
+ </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html" id="logo">RELOL APP</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <article>
-        <section>
-            <!-- arnold code here -->
-        </section>
-
-        <section>
-            <!-- ariel code here -->
-        </section>
-
-        <section>
-            <!-- art code here -->
-        </section>
-
-    </article>
-
-    <aside> <!-- aside (we can delete later if we don't need it) --> </aside>
-
-    <footer> <!-- footer (we can delete later if we don't need it) --> </footer>
+ <!-- Main Bootstrap Search -->
+ <div class="container">
+   <!-- Jumbotron for Title -->
+   <div class="jumbotron" style="background-color: rgb(84, 109, 167) ; color: white;">
+     <h1 class="text-center">
+       <strong>
+         <i class="fa fa-search"></i> Relocate with RELOL</strong>
+     </h1>
+   </div>
+   <!-- Row for Searching New York Times -->
+   <div class="row">
+     <div class="col-sm-12">
+       <br>
+       <!-- First card is for handling the search parameters -->
+       <div class="card">
+         <div class="card-header">
+           <strong>
+             <i class="fa fa-list-alt"></i> Education and Crime Rates in Your Area</strong>
+         </div>
+         <div class="card-body">
+           <!-- Here we create an HTML Form for handling the inputs-->
+           <form role="form">
+             <!-- Here we create the text box for capturing the search term-->
+             <div class="form-group">
+               <label for="search">Search Term:</label>
+               <input type="text" class="form-control school-input" id="search-term">
+             </div>
+             <!-- Here we have our final submit button -->
+             <button type="submit" class="btn btn-default" id="run-search">
+               <i class="fa fa-search"></i> Search</button>
+             <button class="btn btn-default" id="clear-all">
+               <i class="fa fa-trash"></i> Clear Results</button>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- This row will handle all of the retrieved crime info -->
+   <div class="row">
+     <div class="col-sm-12">
+       <br>
+       <!-- This card will initially be made up of a card and wells for each of the fields retrieved -->
+       <div class="card">
+         <!-- card Heading for the retrieved crime info box -->
+         <div class="card-header">
+           <strong>
+             <i class="fa fa-table"></i> Search Results for Crime Rates</strong>
+         </div>
+         <!-- This main card will hold each of the resulting articles -->
+         <div class="card-body" id="article-section">
+         </div>
+       </div>
+     </div>
+   </div>
+    <!-- This row will handle all of the retrieved education info -->
+    <div class="row">
+     <div class="col-sm-12">
+       <br>
+       <!-- This card will initially be made up of a card and wells for each of the education data retrieved -->
+       <div class="card">
+         <!-- card Heading for the retrieved education info box -->
+         <div class="card-header">
+           <strong>
+             <i class="fa fa-table"></i> Search Results for Education Ranking</strong>
+         </div>
+         <!-- This main card will hold each of the resulting data -->
+<div class="card-body" id="article-section">
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Footer Region -->
+ </div>
+ <!-- jQuery JS -->
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+ <!-- Code to the JavaScript File -->
+ <script src="school.js"></script>
 </body>
 </html>
