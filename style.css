@@ -1,0 +1,70 @@
+.card-body a {
+    word-break: break-all;
+  }
+
+.articleHeadline {
+    line-height: 1.5;
+  }
+
+body {
+    background-image: url("img/cityb.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: 0px;
+    z-index: 6;
+}
+
+.jumbotron {
+    width: 100%;
+    background-color:grey;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    position: relative;
+
+}
+
+/* .car{
+    width: 17%;
+    animation: slide 10s linear infinite;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+
+
+} */
+
+/* @keyframes slide {
+    0%{
+        transform: translate3d(800px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+} */
+
+h1 {
+    font-size: 60px;
+}
+
+.logo {
+    border:1px solid white;
+}
+
+.siteHeadline{
+    position: relative;
+    z-index: 6;
+}
+
+.card {
+    margin: 10px;
+    width: 100%;
+}
+.card-header{
+    background-color: grey;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
