@@ -20,14 +20,14 @@ body {
 
 .jumbotron {
     width: 100%;
-    background-color:grey;
-    color: white;
+    background-color:#F8D681;
+    color: #99B8D2;
     font-family: 'Barlow Condensed', sans-serif;
     position: relative;
 
 }
 
-/* .car{
+.car{
     width: 17%;
     animation: slide 10s linear infinite;
     z-index: 5;
@@ -35,16 +35,16 @@ body {
     top: 0;
 
 
-} */
+}
 
-/* @keyframes slide {
+@keyframes slide {
     0%{
         transform: translate3d(800px,0,0);
     }
     100%{
         transform: translate3d(0,0,0);
     }
-} */
+}
 
 h1 {
     font-size: 60px;
