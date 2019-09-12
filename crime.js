@@ -18,7 +18,7 @@ $("#run-search").on("click", function(event) {
 
  var queryURL = "https://api.usa.gov/crime/fbi/sapi/api/summarized/state/"
 
- queryURL = queryURL + state +"/aggravated-assault/2017/2017?&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv";
+ queryURL = queryURL + state +"/violent-crime/2017/2017?&API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv";
 
 
 
