@@ -42,7 +42,7 @@
             <i class="fa fa-map-marker"></i> Relocate with Confidence</strong>
         </h1>
       </div>
-      <!-- <img class="car" src="https://media.giphy.com/media/3on2145OdwdWxn48Oh/giphy.gif" /> --> 
+      <img class="car" src="https://media.giphy.com/media/3on2145OdwdWxn48Oh/giphy.gif" />
     </div>
 
     <!-- Row for Searching New York Times -->
@@ -147,13 +147,21 @@
             <strong>
               <i class="fa fa-table"></i> Search Results for Crime Rates</strong>
           </div>
-
-          <!-- This main card will hold each of the resulting articles -->
-          <div class="card-body" id="crime-section">
-          </div>
+         <!-- This main card will hold each of the resulting articles -->
+          <div class="card-body" id="article-section">
+            <table id="tableCrime" style="visibility:hidden" border="1">
+                <tr>
+                    <th>State</th>
+                    <th>Precinct</th>
+                    <th>Offence</th>
+                    <th>Actual</th>
+                    <th>Cleared</th>
+                    <th>Data Year</th>
+                </tr>
+            </table>
+         </div>
         </div>
       </div>
-
 
       <!-- This col will handle all of the retrieved education info -->
 
@@ -186,6 +194,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <!-- Code to the JavaScript File -->
   <script src="school.js"></script>
+  <script src="crime.js"></script>
 
 </body>
 
